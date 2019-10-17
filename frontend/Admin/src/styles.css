@@ -1,0 +1,466 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    /*  10px/16   */
+}
+
+body {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: #777;
+    padding: 3rem;
+}
+
+.ms-header {
+    /* background-color: #444; */
+    padding: 0 5rem;
+    height: 10rem;
+    /* height: 95vh; */
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.801), rgba(40, 180, 133, 0.801));
+    position: relative;
+}
+
+.ms-header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
+
+.ms-header__logo {
+    height: 3.5rem;
+}
+
+
+/*
+=====================
+ --- ALL LINKS ---
+=====================
+  */
+
+.ms-nav {
+    /* position: absolute;
+  top: 4rem;
+  right: 4rem; */
+    float: right;
+    margin-top: 4rem;
+}
+
+.ms-nav-logout,
+.ms-nav-user {
+    color: #f7f7f7;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    text-decoration: none;
+    /*   padding-left: 5rem;*/
+    transition: all 0.2s;
+}
+
+.ms-nav-logout:hover,
+.ms-nav-user:active,
+.ms-nav-logout:active,
+.ms-nav-user:hover {
+    transform: translateY(-2px);
+    text-shadow: 0 0.7rem 1rem black;
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+.ms-nav-logout {
+    margin-right: 3rem;
+}
+
+.ms-nav-user span {
+    /* vertical-align: middle; */
+}
+
+.ms-user-img {
+    height: 3.5rem;
+    width: 3.5rem;
+    /* margin-top: -2.5rem; */
+    border-radius: 50%;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+.ms-section-about {
+    background-color: #f7f7f7;
+    padding: 25rem 0;
+}
+
+.ms-main {
+    height: 100vh;
+    background-color: #f7f7f7;
+    padding: 8rem 6rem;
+    position: relative;
+}
+
+.ms-login-form {
+    margin: 0 auto;
+    max-width: 55rem;
+    background-color: #fff;
+    box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
+    padding: 5rem 7rem;
+    border-radius: 5px;
+}
+
+.ms-heading-secondary {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: -webkit-gradient( linear, left top, right top, from(#7dd56f), to(#28b487));
+    background-image: linear-gradient(to right, #7dd56f, #28b487);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 0.1rem;
+    line-height: 1.3;
+    display: inline-block;
+
+    margin-bottom: 1rem;
+}
+
+.ms-heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    margin-bottom: 1.5rem;
+
+}
+
+.ms-ma-bt-lg {
+    margin-bottom: 3.5rem !important;
+}
+
+.ms-form__group:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
+
+.ms-form__label {
+    color: #777;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.ms-form__input {
+    display: block;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: inherit;
+    padding: 1.25rem 1.75rem;
+    border: none;
+    width: 100%;
+    background-color: #fff;
+    background-color: #f2f2f2;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* Pseudo element (a visible thing that isn't really in the DOM).
+      Also needs -ms- */
+}
+
+.ms-form__input:focus {
+    outline: none;
+    border-bottom: 3px solid #55c57a;
+}
+
+.ms-form__input:focus:invalid {
+    border-bottom: 3px solid #ff7730;
+}
+
+.ms-form__input::-webkit-input-placeholder {
+    color: #bbb;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/*
+=====================
+ --- ADMIN PAGE ---
+=====================
+  */
+
+.ms-admin-view {
+    background-color: #fff;
+    max-width: 120rem;
+    margin: 0 auto;
+    /*    min-height: 100vh;*/
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.07);
+}
+
+.ms-admin-view__menu {
+    background-image: linear-gradient(to right bottom, #7dd56f, #28b487);
+    /*    padding: 4rem 0;*/
+    /*    width: 32rem;*/
+    /*    padding-top: 4rem;*/
+    /*    min-height: 110vh;*/
+    /*    height: 100vh;*/
+}
+
+.ms-side-nav {
+    list-style: none;
+    /*    height: 100vh;*/
+}
+
+.ms-side-nav li {
+    display: inline-block;
+    margin: 1rem 0;
+    border-left: 0 solid #fff;
+    transition: all 0.3s;
+}
+
+.ms-side-nav--active,
+.ms-side-nav li:hover {
+    border-left: 4px solid #fff !important;
+}
+
+.ms-side-nav--active a {
+    transform: translateX(-3px);
+}
+
+
+/*
+to try to fix the problem - still doesnt work
+.side-nav--active a:hover {
+    transform: translateX(-9px);
+}
+*/
+
+.ms-side-nav a:link,
+.ms-side-nav a:visited {
+    display: flex;
+    /*I only need this for the transformation of side-nav--active to work ??I dont know why*/
+    padding: 1rem 4rem;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.ms-side-nav a:hover,
+.ms-side-nav a:active {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+}
+
+.ms-side-nav .ion-icon {
+    /* height: 1.9rem;
+    width: 1.9rem; */
+    font-size: 2rem;
+    fill: #f7f7f7;
+    margin-right: 2rem;
+    /* fill: #f7f7f7;
+    margin-right: 2rem; */
+}
+
+
+/*
+=====================
+ --- BUTTONS ---
+=====================
+  */
+
+.ms-btn,
+.ms-btn:link,
+.ms-btn:visited {
+    font-size: 1.6rem;
+    padding: 1.4rem 3rem;
+    border-radius: 10rem;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    font-weight: 400;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /*Add later when we use this for the button in form*/
+    border: none;
+    cursor: pointer;
+}
+
+.ms-btn:hover {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.ms-btn:active {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.ms-btn:focus {
+    outline: none;
+    background-color: #2e864b;
+}
+
+.ms-btn--white {
+    background-color: #fff;
+    color: #777;
+}
+
+.ms-btn--white::after {
+    background-color: #fff;
+}
+
+.ms-btn--green {
+    background-color: #55c57a;
+    color: #fff;
+}
+
+.ms-btn--green::after {
+    background-color: #55c57a;
+}
+
+
+/*
+=====================
+  NORMAL ROUND BUTTONS - To be used later...
+=====================
+  */
+
+.ms-btn:link,
+.ms-btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem;
+}
+
+.ms-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.ms-btn:hover::after {
+    transform: scaleX(1.5) scaleY(1.6);
+    opacity: 0;
+}
+
+.ms-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.ms-btn--white {
+    background-color: #fff;
+    color: #777;
+}
+
+
+/*
+  =====================
+    TEXT BUTTONS - To be used later...
+  =====================
+    */
+
+.ms-btn-text:link,
+.ms-btn-text:visited {
+    font-size: 1.6rem;
+    color: #55c57a;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #55c57a;
+    padding: 3px;
+    transition: all .2s;
+}
+
+.ms-btn-text:hover {
+    background-color: #55c57a;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.ms-btn-text:active {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+}
+
+
+/*
+=====================
+  CUSTOM GRID SYSTEM
+=====================
+  */
+
+.ms-row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.ms-row:not(:last-child) {
+    margin-bottom: 8rem;
+}
+
+.ms-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ms-row [class^="col-"] {
+    float: left;
+}
+
+.ms-row [class^="col-"]:not(:last-child) {
+    margin-right: 6rem;
+}
+
+.ms-row .col-1-of-2 {
+    width: calc( (100% - 6rem) / 2);
+}
+
+.ms-row .col-1-of-3 {
+    width: calc( (100% - 2 * 6rem) / 3);
+}
+
+.ms-row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem);
+}
+
+.ms-row .col-1-of-4 {
+    width: calc( (100% - 3 * 6rem) / 4);
+}
+
+.ms-row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem);
+}
+
+.ms-row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
+}

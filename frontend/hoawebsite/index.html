@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Homeowners Association | Ticketing System</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__logo-box">
+            <img src="img/sample-logo.png" alt="Logo" class="header__logo">
+        </div>
+
+
+        <nav class="nav">
+            <a class="nav-logout" href="#">Log out</a>
+
+            <a class="nav-user" href="#">
+                <img class="user-img" src="img/user.jpg" alt="Photo of User">
+                <span>User One</span>
+            </a>
+        </nav>
+
+    </header>
+
+
+
+    <main class="main">
+        <!--            <section class="section-about">-->
+
+        <div class="login-form">
+            <h2 class="heading-secondary ma-bt-lg">Create a ticket</h2>
+            <!-- <form class="form form--signup" method="POST" action="php/sample.php"> -->
+            <form class="form form--signup">
+                <div class="form__group">
+                    <label class="form__label" for="name">Your name</label>
+                    <input class="form__input" id="name" type="text" name="name" placeholder="" required>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="email">Email address</label>
+                    <input class="form__input" id="email" type="email" name="email" placeholder="you@example.com" required>
+                </div>
+                 <div class="form__group">
+                    <label class="form__label" for="number">Phone number</label>
+                    <input class="form__input" id="number" type="tel" name="phone" placeholder="123-456-7890" required>
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label" for="subject">Subject</label>
+                    <input class="form__input" id="subject" type="text" name="subject" placeholder="subject" required>
+                </div>
+
+                 <div class="form__group">
+                    <label class="form__label" for="message">Message</label>
+                     <textarea class="form__input" id="message" type="tel" name="message" placeholder="Your message" required></textarea>
+<!--                    <input class="form__input" id="message" type="tel" name="phone" placeholder="Your message" required>-->
+                </div>
+<!--
+                <div class="form__group ma-bt-md">
+                    <label class="form__label" for="password">Password</label>
+                    <input class="form__input" id="password" type="password" placeholder="••••••••" required minlength="8">
+                </div>
+                <div class="form__group ma-bt-md">
+                    <label class="form__label" for="passwordConfirm">Confirm password</label>
+                    <input class="form__input" id="passwordConfirm" type="password" placeholder="••••••••" required minlength="8">
+                </div>
+-->
+                <div class="form__group">
+                    <button class="btn btn--green" id="button">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <a href="#" class="test">Test Button</a>
+
+
+        <!--            </section>-->
+    </main>
+<script src="js/script.js"></script>
+</body>
+
+</html>

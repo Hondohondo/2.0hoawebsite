@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Homeowners Association | Ticketing System</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__logo-box">
+            <img src="img/sample-logo.png" alt="Logo" class="header__logo">
+        </div>
+
+
+        <nav class="nav">
+            <a class="nav-logout" href="#">Log out</a>
+
+            <a class="nav-user" href="#">
+                <img class="user-img" src="img/user.jpg" alt="Photo of User">
+                <span>Admin One</span>
+            </a>
+        </nav>
+
+    </header>
+
+
+
+    <main class="main">
+
+        <div class="admin-view">
+            <nav class="admin-view__menu" id="admin-nav">
+                <ul class="side-nav">
+                    <li class="side-nav--active">
+                        <a href="#">
+                            <i class="icon ion-ios-home ion-icon"></i>Home
+<!--                       <ion-icon name="ios-home" class="ion-icon"></ion-icon>Home-->
+                        </a>
+                    </li>
+                    <li> <a href="#">
+                        <i class="icon ion-ios-chatboxes ion-icon"></i>Forum
+<!--                       <ion-icon name="ios-chatboxes" class="ion-icon"></ion-icon>Forum-->
+                        </a></li>
+                    <li> <a href="#">
+                        <i class="icon ion-ios-list ion-icon"></i>Ticket
+<!--                       <ion-icon name="ios-list-box" class="ion-icon"></ion-icon>Ticket-->
+                        </a></li>
+                    <li> <a href="#">
+                        <i class="icon ion-ios-person ion-icon"></i>Admin
+<!--                       <ion-icon name="ios-person" class="ion-icon"></ion-icon>Admin-->
+                        </a></li>
+                </ul> 
+       
+            </nav>
+<!--
+            <div class="admin-view__content">
+               blah blah
+                <div class="line">&nbsp;</div>
+                <a href="#" class="btn btn--green">Pop Up Example</a>
+              
+            </div>
+-->
+        </div>
+        
+         <div class="admin-view__content">
+                <a href="#popup" class="btn btn--green">Pop Up Example -- Click me!</a>
+            </div>
+        
+        
+        <div class="popup" id="popup">
+            <div class="popup-content">
+<!--
+                <div class="popup-left">
+                    <img src="img/user.jpg" class="popup-img">
+                    <img src="img/user.jpg" class="popup-img">
+                </div>
+-->
+                
+                <div class="popup-right">
+                    <a href="#admin-nav" class="popup-close">&times;</a>
+                    <h2 class="heading-secondary">User One / Email / Phone</h2>
+                    <h3 class="heading-tertiary">Subject &ndash; Please read my ticket</h3>
+                    <p class="popup-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </p>
+                    
+                </div>
+            
+            </div>
+        
+        </div>
+
+    </main>
+ 
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+.grid {
+    background-color: #f2f2f2;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+#ticketTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#ticketTable .tableBody,
+#ticketTable tbody {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 400px;
+    width: 100%;
+}
+
+#ticketTable td,
+#ticketTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#ticketTable tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+#ticketTable tr:hover {
+    background-color: #ddd;
+}
+
+#ticketTable th {
+    text-transform: uppercase;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.801), rgba(40, 180, 133, 0.801));
+    color: white;
+}
+
+#buttonPull {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgba(126, 213, 111, 0.801);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.txt-area-modal {
+    width: 100%;
+}
+
+.field-head {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.801), rgba(40, 180, 133, 0.801));
+    color: white;
+}
+
+.form-group .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.modal-header {
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.801), rgba(40, 180, 133, 0.801));
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.modal-field {
+    font-size: 18px;
+}

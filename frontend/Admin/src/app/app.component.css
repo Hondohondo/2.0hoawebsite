@@ -1,0 +1,14 @@
+.navbar {
+    border-bottom-width: 1px;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+}
+
+.navbar-nav {
+    font-size: 1.8em !important;
+}
+
+.nav-link {
+    padding-right: 5rem !important;
+    color: gray;
+}
